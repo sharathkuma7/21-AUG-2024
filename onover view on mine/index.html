@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+
+
+
+
+    <script>
+      var div_cre1 = document.createElement("div");
+      document.body.append(div_cre1);
+      div_cre1.style.border = "3px solid red";
+      div_cre1.style.width = "600px";
+      div_cre1.style.height = "400px";
+      div_cre1.style.marginLeft = "200px";
+
+      var img1_cre = document.createElement("img");
+      div_cre1.appendChild(img1_cre);
+
+      var div_cre2 = document.createElement("div");
+      document.body.appendChild(div_cre2);
+
+      div_cre2.style.margin = "10px 0px 0px 10%";
+      div_cre2.style.border = "2px solid red";
+      div_cre2.style.width = "700px";
+      div_cre2.style.height = "150px";
+
+      var img2_cre = document.createElement("img");
+      div_cre2.appendChild(img2_cre);
+      img2_cre.src = "AI-and-humans.jpg";
+      img2_cre.style.width = "200px";
+      img2_cre.style.heigth = "200px";
+      img2_cre.style.marginLeft = "50px";
+      img2_cre.addEventListener("mouseover", cb1);
+
+      var img3_cre = document.createElement("img");
+      div_cre2.appendChild(img3_cre);
+      img3_cre.src = "ai_original.jpg";
+      img3_cre.style.width = "200px";
+      img3_cre.style.heigth = "80px";
+      img3_cre.style.paddingRight = "20px";
+      img3_cre.addEventListener("mouseover", cb2);
+
+      var img4_cre = document.createElement("img");
+      div_cre2.appendChild(img4_cre);
+      img4_cre.src = "Artificial_Intelligence.jpg";
+      img4_cre.style.width = "200px";
+      img4_cre.style.heigth = "200px";
+      img4_cre.addEventListener("mouseover", cb3);
+
+      function cb1() {
+        img1_cre.src = "AI-and-humans.jpg";
+        img1_cre.style.width = "600px";
+        img1_cre.style.height = "400px";
+      }
+
+      function cb2() {
+        img1_cre.src = "ai_original.jpg";
+        img1_cre.style.width = "600px";
+        img1_cre.style.height = "400px";
+      }
+
+      function cb3() {
+        img1_cre.src = "Artificial_Intelligence.jpg";
+        img1_cre.style.width = "600px";
+        img1_cre.style.height = "400px";
+      }
+
+    </script>
+
+
+  </body>
+</html>

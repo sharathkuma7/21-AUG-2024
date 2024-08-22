@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+
+
+    <button onclick="colorchange()">ON</button>
+    <button onclick="Nochange()">OFF</button>
+
+
+    <script>
+
+      var div_get = document.createElement("div");
+      div_get.style.width = "300px";
+      div_get.style.height = "300px";
+      div_get.style.border = "2px solid red";
+      document.body.append(div_get);
+
+      function colorchange() {
+        div_get.style.background =
+          "linear-gradient(0.25turn, #3f8776, #ebf8e1, #f69d3c)";
+      }
+      function Nochange() {
+        div_get.style.background = "white";
+      }
+      
+    </script>
+
+
+  </body>
+</html>
